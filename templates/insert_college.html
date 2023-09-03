@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>insert_college..............</h1>
+        <form method="POST">
+            {% csrf_token %}
+
+            <label for="cn">CName</label>
+            <input type="text" name="cn" id="cn"><br><br>
+
+            <label for="p">Principal</label>
+            <input type="text" name="p" id="p"><br><br>
+
+            <label for="l">Location</label>
+            <input type="text" name="l" id="l"><br><br>
+
+            <input type="submit" value="insert_college">
+            
+
+    </center>
+</body>
+</html>

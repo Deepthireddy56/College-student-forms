@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>display_college</h1>
+
+        <table border="1px">
+            <tr><th>CName</th>
+            <th>Principal</th>
+            <th>Location</th></tr>
+
+                {% for co in QLCO %}
+                    <tr>
+                        <td>{{co.CName}}</td>
+                        <td>{{co.Principal}}</td>
+                        <td>{{co.Location}}</td>
+                    </tr>
+                {% endfor %}
+        </table>
+    </center>
+</body>
+</html>
